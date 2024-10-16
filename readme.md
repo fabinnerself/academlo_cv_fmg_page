@@ -5,7 +5,7 @@
 
 Este proyecto implementa mi Curriculm con frontend responsive (HTML, CSS, JavaScript), ofreciendo una interfaz intuitiva y adaptable a diferentes dispositivos. Incluye funcionalidades como modo oscuro, carga dinámica, soporte para múltiples idiomas y envío de formularios. Utiliza CSS personalizado para crear un diseño atractivo y coherente, y JavaScript para agregar interactividad y mejorar la experiencia del usuario, fuente google fonts, variables CSS.
 
-
+Puedes visitar la plataforma en línea en https://academlo-cv-fmg-page.vercel.app/
 
 ### Requisitos del Sistema
 
@@ -21,8 +21,6 @@ El proyecto también ha sido probado en el siguiente entorno alternativo:
 - **Sistema Operativo**: Windows 10 Pro 1803
 - **NodeJS**:  18.20.4
 - **npm/npx**: 18.20.4
-
-# Fuente
 
  
 ## Imagenes
