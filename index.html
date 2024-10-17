@@ -24,7 +24,7 @@
   <script type="text/javascript">
     (function () {
       emailjs.init({
-        publicKey: "",
+        publicKey: "ZckYQlgkevWbL3g3i",
       });
     })();
   </script>  
@@ -493,35 +493,39 @@
           <h3 class="contact__form-title">Enviar mensaje</h3>
 
 
-          <form id="form" class="contact__form-container">
+          <form id="form" class="contact__form-container" novalidate>
             <div class="contact__form-group">
               <label for="name" class="contact__form-label">Nombre</label>
-              <input type="text" id="name" name="name" class="contact__form-input" />
+              <input type="text" id="name" name="name" class="contact__form-input" placeholder="Ingresa tu nombre" />
             </div>
 
             <div class="contact__form-group">
               <label for="email" class="contact__form-label">Correo</label>
-              <input type="email" id="email" name="email" class="contact__form-input" />
+              <input type="email" id="email" name="email" class="contact__form-input" placeholder="Ingresa tu correo electronico" pattern="^[a-z0-9.%_+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"  />
             </div>
 
             <div class="contact__form-group">
               <label for="subject" class="contact__form-label">Asunto</label>
-              <input type="text" id="subject" name="subject" class="contact__form-input" />
+              <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="Ingresa un asunto" />
             </div>
 
             <div class="contact__form-group">
               <label for="message" class="contact__form-label">Mensaje</label>
-              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input" placeholder="Ingresa un mensaje"></textarea>
             </div>
             <dialog id="modal">
               Formulario enviado con éxito!
               <button type="reset" id="btn_close-modal">Cerrar</button>
-            </dialog>
+            </dialog>                    
 
             <button type="submit" class="btn contact__form-button">
               Enviar
             </button>
           </form>
+          <dialog id="modal_error">
+            <p id="error_message"></p>
+            <button id="btn_close-modal_error">Cerrar</button>
+          </dialog> 
         </div>
       </div>
     </section>

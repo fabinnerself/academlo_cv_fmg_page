@@ -24,7 +24,7 @@
   <script type="text/javascript">
     (function () {
       emailjs.init({
-        publicKey: "",
+        publicKey: "ZckYQlgkevWbL3g3i",
       });
     })();
   </script>  
@@ -495,22 +495,22 @@
           <form id="form" class="contact__form-container">
             <div class="contact__form-group">
               <label for="name" class="contact__form-label">Name</label>
-              <input type="text" id="name" name="name" class="contact__form-input" />
+              <input type="text" id="name" name="name" class="contact__form-input" placeholder="Enter a name" />
             </div>
 
             <div class="contact__form-group">
               <label for="email" class="contact__form-label">E-mail</label>
-              <input type="email" id="email" name="email" class="contact__form-input" />
+              <input type="email" id="email" name="email" class="contact__form-input" placeholder="Enter an E-mail" />
             </div>
 
             <div class="contact__form-group">
               <label for="subject" class="contact__form-label">Subject</label>
-              <input type="text" id="subject" name="subject" class="contact__form-input" />
+              <input type="text" id="subject" name="subject" class="contact__form-input" placeholder="Enter a subject" />
             </div>
 
             <div class="contact__form-group">
               <label for="message" class="contact__form-label">Menssage</label>
-              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input" placeholder="Enter a message"></textarea>
             </div>
             <dialog id="modal">
                 Form successfully submitted!
@@ -521,6 +521,10 @@
               Send
             </button>
           </form>
+          <dialog id="modal_error">
+            <p id="error_message"></p>
+            <button id="btn_close-modal_error">Cerrar</button>
+          </dialog>          
         </div>
       </div>
     </section>
